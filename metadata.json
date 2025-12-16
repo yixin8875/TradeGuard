@@ -1,0 +1,5 @@
+{
+  "name": "TradeGuard 交易策略计算器",
+  "description": "一个根据分层利润规则计算止损和止盈水平的交易工具。",
+  "requestFramePermissions": []
+}
