@@ -14,7 +14,7 @@ export const StrategyCard: React.FC = () => {
           <ShieldAlert className="w-5 h-5 text-red-400 mt-1 shrink-0" />
           <div>
             <p className="text-sm font-semibold text-slate-200">利润 &lt; 5%</p>
-            <p className="text-xs text-slate-400">硬止损：入场价的 -5%。</p>
+            <p className="text-xs text-slate-400">硬止损：入场价的 -5%。触及止损时<b>全仓卖出</b>。</p>
           </div>
         </div>
 
@@ -23,7 +23,7 @@ export const StrategyCard: React.FC = () => {
           <DollarSign className="w-5 h-5 text-yellow-400 mt-1 shrink-0" />
           <div>
             <p className="text-sm font-semibold text-slate-200">5% &le; 利润 &lt; 10%</p>
-            <p className="text-xs text-slate-400">保本或锁定微利 (1-2%)。</p>
+            <p className="text-xs text-slate-400">保本或锁定微利。触及止损时<b>全仓卖出</b>。</p>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ export const StrategyCard: React.FC = () => {
           <TrendingUp className="w-5 h-5 text-blue-400 mt-1 shrink-0" />
           <div>
             <p className="text-sm font-semibold text-slate-200">10% &le; 利润 &lt; 20%</p>
-            <p className="text-xs text-slate-400">止盈。回撤利润的 1/2 作为止损缓冲 (止损 = 入场 + 50% 浮盈)。</p>
+            <p className="text-xs text-slate-400"><b>建议止盈一半</b>。剩余仓位回撤利润的 1/2 作为止损缓冲。</p>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ export const StrategyCard: React.FC = () => {
           <TrendingUp className="w-5 h-5 text-green-400 mt-1 shrink-0" />
           <div>
             <p className="text-sm font-semibold text-slate-200">利润 &ge; 20%</p>
-            <p className="text-xs text-slate-400">止盈。回撤利润的 30% 作为止损缓冲 (止损 = 入场 + 70% 浮盈)。</p>
+            <p className="text-xs text-slate-400"><b>建议已止盈一半</b>。剩余仓位回撤利润的 30% 作为止损缓冲。</p>
           </div>
         </div>
       </div>
